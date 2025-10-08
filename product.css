@@ -1,0 +1,353 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background-color: #f5f0f0;
+}
+
+header {
+    background: #af97f1;
+    color: rgb(10, 37, 112);
+    padding: 0rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    background: linear-gradient(to right, #e9f2ff, #ffffff);
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    color: #0d6efd;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.hero-text button {
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    background: #0b5ed7;
+}
+
+.hero img {
+    width: 400px;
+    max-width: 100%;
+}
+
+/* ======= PRODUCTS ======= */
+.products {
+    padding: 60px;
+    text-align: center;
+}
+
+.products h2 {
+    color: #0d6efd;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.product-card button {
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    background: #0b5ed7;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    background: #0d6efd;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======= MOVING MARQUEE (continuous horizontal motion) ======= */
+.marquee-wrap {
+    margin: 30px 48px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: linear-gradient(90deg, rgba(13, 110, 253, 0.06), rgba(13, 110, 253, 0.02));
+    padding: 14px;
+}
+
+/* track is duplicated content that scrolls left */
+.marquee {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* animate the track */
+    animation: scroll-left linear infinite;
+    will-change: transform;
+}
+
+/* each mini-card inside marquee */
+.mini-card {
+    flex: 0 0 220px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.mini-card img {
+    width: 180px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.mini-card h4 {
+    font-size: .98rem;
+    margin-top: 6px;
+    color: #0f172a;
+    text-align: center;
+}
+
+.mini-card p {
+    color: #556;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+/* animation length controls speed; adjust duration to change speed */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* because we duplicate content below */
+}
+
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 900px) {
+    header {
+        padding: 16px 20px;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .herro {
+        padding: 36px 20px;
+    }
+
+    .marquee-wrap {
+        margin: 20px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .mini-card {
+        flex: 0 0 180px;
+    }
+
+    .marquee {
+        gap: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .herro-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .mini-card img {
+        width: 140px;
+        height: 90px;
+    }
+
+    .mini-card {
+        flex: 0 0 150px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: #332c44;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.socials a {
+    margin: 0 1rem;
+    color: #e7eeec;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+}
+
+.credit {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #e6bdbd;
+}

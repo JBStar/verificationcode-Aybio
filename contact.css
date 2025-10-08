@@ -1,0 +1,66 @@
+ body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: #f8f9fa;
+ }
+
+
+
+
+
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     line-height: 1;
+     background-color: #3a3838;
+ }
+
+ header {
+     background: #af97f1;
+     color: rgb(10, 37, 112);
+     padding: 0rem 0;
+     text-align: center;
+ }
+
+ nav ul {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     gap: 4rem;
+ }
+
+ nav ul li a {
+     color: white;
+     text-decoration: none;
+ }
+
+ header,
+ footer {
+     background-color: #111;
+     color: #fff;
+     padding: 1rem 2rem;
+ }
+
+ header nav a {
+     color: #fff;
+     margin-left: 1rem;
+     text-decoration: none;
+ }
+
+ header nav a:hover {
+     text-decoration: underline;
+ }
+
+ .contact-section {
+     max-width: 800px;
+     margin: 2rem auto;
+     padding: 2rem;
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+ }
+
+ .form-floating label {
+     color: #6c757d;
+ }

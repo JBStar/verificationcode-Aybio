@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background-color: #f5f3f3;
+}
+
+header {
+    background: #af97f1;
+    color: rgb(10, 37, 112);
+    padding: 0rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.about-sell {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.about-content {
+    z-index: 1;
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: darken for better text visibility */
+    border-radius: 10px;
+}
+
+
+.btn {
+    background-color: rgb(89, 11, 190);
+    color: #4f46e5;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.services-preview {
+    padding: 2rem;
+    text-align: center;
+    background-color: #3c3d3b;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    background-color: #f4f4f7;
+    width: 30%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #050505;
+    color: #e8e7eb;
+}
+
+
+
+
+
+.about {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+
+}
+
+.hero h1 {
+    font-size: 10rem;
+    margin-bottom: 2.5rem;
+    color: #ee0a15;
+}
+
+.hero p {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    line-height: 2.5;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+.about-section {
+    background-color: #e4dede;
+    padding: 4rem 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.about-section .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0.5rem auto;
+}
+
+
+
+.team-member h4 {
+    font-size: 1.2rem;
+    color: #111;
+    margin-bottom: 0.3rem;
+}
+
+.team-member p {
+    color: #666;
+}
+
+/* Tools & Tech */
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.tool {
+    background: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    color: #333;
+}

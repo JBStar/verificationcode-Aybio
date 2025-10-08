@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Business</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to JULUS Studio</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="solo.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>JULUS Studio</h2>
+            <p> At JULUS Studio,we specialize in creating innovative product designs that make life easier, faster, and
+                more attractive to customers.</p>
+            <button>Shop With Us Now</button>
+        </div>
+        <img src="juus.png" alt="Product Image" />
+    </section>
+
+    <section id="products" class="products">
+        <h2>JULUS Studio Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="cup.jpeg" alt="Smart Watch" />
+                <h3>Office coffee classic cups</h3>
+                <p>well design Portable coffee cup </p>
+                <button onclick="addToCart('Smart Watch')">see more</button>
+            </div>
+
+            <div class="product-card">
+                <img src="shoes1.jpeg" alt="Wireless Earbuds" />
+                <h3>Suitainable packaging</h3>
+                <p>Suitainable shoes packaging</p>
+                <button onclick="addToCart('Wireless Earbuds')">See More</button>
+            </div>
+            <div class="product-card">
+                <img src="oo17.jpg" alt="Smart Glasses" />
+                <h3>Your story bottled in scent</h3>
+                <p>Whispers of luxury </p>
+                <button onclick="addToCart('Smart Glasses')">See more</button>
+            </div>
+
+            <div class="product-card">
+                <img src="fr.avif" alt="Bluetooth Speaker" />
+                <h3>pure skin care </h3>
+                <p>Feed your skin. free your confidence.</p>
+                <button onclick="addToCart('Bluetooth Speaker')">see more</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ======= Continuous moving product strip (marquee) ======= -->
+    <div class="marquee-wrap" aria-hidden="false" title="Featured products moving left">
+        <!-- We'll duplicate the inner .marquee content with JS to make a seamless loop -->
+        <div id="marquee" class="marquee" tabindex="0" aria-label="Moving featured products">
+            <!-- Items (can be any number) -->
+            <div class="mini-card">
+                <img src="juju.jpg" alt="Smart Watch" />
+                <h4>A bottle of art. A Sip of elegance</h4>
+                <p>Raise your glass to the finer things</p>
+            </div>
+
+            <div class="mini-card">
+                <img src="take5.jpeg" alt="Wireless Earbuds" />
+                <h4>Good food deserves great packaging.</h4>
+                <p>eco-friendly</p>
+            </div>
+
+            <div class="mini-card">
+                <img src="lip.jpg" alt="Smart Glasses" />
+                <h4>Because every smile deserves a shade.</h4>
+                <p>Stay soft, slay hard.</p>
+            </div>
+
+            <div class="mini-card">
+                <img src="julo4.png" alt="Bluetooth Speaker" />
+                <h4>“Designed for dreamers — built for every sip</h4>
+                <p>Taste luxury in every pour.</p>
+            </div>
+
+            <div class="mini-card">
+                <img src="julo1.jpeg" alt="Portable Charger" />
+                <h4> Designed to refresh, built to last.</h4>
+                <p>Simple. Smart. Stunning.</p>
+            </div>
+
+            <!-- Repeat more items if you like -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="contact">
+        <div class="socials">
+            <a href="https://facebook.com/yourprofile" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://instagram.com/yourprofile" target="_blank"> <ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://twitter.com/yourprofile" target="_blank"> <ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"> <ion-icon
+                    name="logo-linkedin"></ion-icon></a>
+            <a href="https://behance.net/yourprofile" target="_blank"><i class="fab fa-behance"></i></a>
+        </div>
+        <div class="credit">&copy; 2025 DesignCraft Studio | All rights reserved</div>
+    </footer>
+    <script src="product.js"></script>
+</body>
+
+</html>

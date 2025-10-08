@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background-color: #f5f0f0;
+}
+
+header {
+    background: #af97f1;
+    color: rgb(10, 37, 112);
+    padding: 0rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+/* Slides are absolutely stacked */
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    z-index: 0;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content overlay styling */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f0e6e6;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    transition: all 0.5s ease;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    padding: 0.8rem 1.5rem;
+    background: #0074D9;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.hero-btn:hover {
+    background: #5409aa;
+}
+
+
+
+
+
+
+
+.what-we-offer {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: #b2e4e7;
+}
+
+.what-we-offer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0e51d6;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.service-card {
+    background: #795894;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 1rem;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 75%;
+    margin-bottom: 1rem;
+    filter: grayscale(30%);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #f8ecec;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #b1adad;
+}
+
+
+footer {
+    background: #7e69b1;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.socials a {
+    margin: 0 1rem;
+    color: #e7eeec;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+}
+
+.credit {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #e6bdbd;
+}
